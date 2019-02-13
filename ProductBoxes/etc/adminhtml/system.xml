@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="pme" sortOrder="999" translate="label">
+			<label>pme</label>
+		</tab>
+		<section id="additional_registration_fields" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>additional_registration_fields</label>
+			<tab>pme</tab>
+			<resource>PME_ProductBoxes::config_pme_productboxes</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>general</label>
+				<field id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>enable</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
